@@ -49,7 +49,7 @@ An AI-powered job matching agent that analyzes your CV against real job offers s
 
 ## Architecture
 
-
+```
 User uploads CV + keyword
 ↓
 FastAPI /match endpoint
@@ -59,6 +59,8 @@ LangGraph Pipeline
 └── score_node → Mistral scores each job vs CV
 ↓
 Ranked matches returned to frontend
+
+```
 
 
 ---
@@ -88,6 +90,7 @@ Open [http://localhost:5173](http://localhost:5173)
 
 ## Project Structure
 
+```
 cv-job-matcher/
 ├── backend/
 │ ├── app/
@@ -109,7 +112,7 @@ cv-job-matcher/
 │ ├── .env.example
 │ └── Dockerfile
 └── docker-compose.yml
-
+```
 
 ---
 
